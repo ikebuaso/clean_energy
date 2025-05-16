@@ -12,7 +12,7 @@ body{
 nav{
     background-color: #275838;
     color: white;
-    padding: 10px 120px 10px 120px;
+    padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +32,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+.loginsec{
+    display: flex;
+    gap: 10px;
+}
 .loginsec .login{ 
     background-color: #f0f0f0;
     color: #275838;
