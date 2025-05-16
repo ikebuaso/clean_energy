@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav{
+    background-color: #275838;
+    color: white;
+    padding: 10px 120px 10px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #837E7E;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+
+
+}
+nav ul li a{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.loginsec .login{ 
+    background-color: #f0f0f0;
+    color: #275838;
+    padding: 5px;
+    border: 2px;
+}
+
+.loginsec .signup{ 
+    background-color:#46CC755C;
+    color: #f0f0f0;
+    padding: 5px;
+    border: 2px;
+}
