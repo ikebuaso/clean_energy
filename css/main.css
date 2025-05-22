@@ -6,10 +6,10 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color:#fff;
+  background-color: #fff;
 }
 
 /* Header */
@@ -30,48 +30,44 @@ body {
   gap: 20px;
 }
 
-nav{
-    background-color: #275838;
-    color: white;
-    padding: 10px 20px 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1.5px solid #837E7E;
+nav {
+  background-color: #275838;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid #837e7e;
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-
-
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
 }
-nav ul li a{
-    color: #f0f0f0;
-    text-decoration: none;
+nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
-.loginsec{
-    display: flex;
-    gap: 10px;
+.loginsec {
+  display: flex;
+  gap: 10px;
 }
-.loginsec .login{ 
-    background-color: #f0f0f0;
-    color: #275838;
-    padding: 5px;
-    border: 2px;
-}
-
-.loginsec .signup{ 
-    background-color:#46CC755C;
-    color: #f0f0f0;
-    padding: 5px;
-    border: 2px;
+.loginsec .login {
+  background-color: #f0f0f0;
+  color: #275838;
+  padding: 5px;
+  border: 2px;
 }
 
-
+.loginsec .signup {
+  background-color: #46cc755c;
+  color: #f0f0f0;
+  padding: 5px;
+  border: 2px;
+}
 
 .hero {
   background-color: #275838;
@@ -79,6 +75,12 @@ nav ul li a{
   height: 595px;
 }
 
+.hero-content button {
+  background-color: #46cc755c;
+  color: #fff;
+  padding: 10px;
+  border: 4px;
+}
 
 .hero-title {
   font-size: 3rem;
@@ -103,7 +105,7 @@ nav ul li a{
 
 .climate-change-content {
   flex: 0.3;
-  h2{
+  h2 {
     color: #275838;
   }
 }
@@ -111,7 +113,6 @@ nav ul li a{
 .earth-icon {
   width: 200px;
   margin-top: 20px;
-
 }
 
 .climate-change-list {
@@ -131,16 +132,16 @@ nav ul li a{
 }
 
 .solution-card {
-  background-color: #F3FFEF;
+  background-color: #f3ffef;
   padding: 10px;
   text-align: center;
   flex: 1 1 calc(30% - 20px);
 
-      h3{
-        display: flex;
-        gap:20px;
-        align-items: center;
-    }
+  h3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
 }
 
 .solution-icon {
@@ -169,14 +170,19 @@ nav ul li a{
 .contact {
   padding: 50px 0;
 }
-
+.contact-form button {
+  background-color: #46cc755c;
+  color: #fff;
+  padding: 10px;
+  border: 4px;
+}
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 1rem;
 }
 
@@ -195,10 +201,10 @@ nav ul li a{
     text-align: center;
   }
 
-  .hero-content{
+  .hero-content {
     position: relative;
   }
-  .hero-image img{
+  .hero-image img {
     position: relative;
     left: 0px;
     top: 6px;
@@ -211,7 +217,7 @@ nav ul li a{
   }
   .climate-change-content,
   .climate-change-list {
-    width: 100%
+    width: 100%;
   }
   .solution-cards {
     flex-direction: column;
