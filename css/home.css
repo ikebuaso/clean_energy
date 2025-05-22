@@ -1,12 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFF8F8;
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color:#fff;
+}
+
+/* Header */
+.header {
+  background-color: #1b4d3e;
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 nav{
@@ -50,41 +71,159 @@ nav ul li a{
     border: 2px;
 }
 
-.content{
-display: flex;
-justify-content: center;
+
+
+.hero {
+  background-color: #275838;
+  color: white;
+  height: 595px;
 }
 
-.content p{
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  position: relative;
+  left: 370px;
+  height: 600px;
+}
+
+/* Climate Change Section */
+.climate-change {
+  padding: 50px 0;
+}
+
+.climate-change-content {
+  flex: 0.3;
+  h2{
     color: #275838;
-    margin: 20px 0px 20px 0px;
-    padding: 10px;
-    width: 920px;
-    height:40px;
-    padding: 10px;
-    font-size: 50px;
-    font-family: 'Lekton';
-    font-weight: 700;
-    letter-spacing: 0%;
+  }
 }
 
-.content2{
-    width: 780px;
-    height: 216px;
-    margin: 100px 20px 0px 40px;
+.earth-icon {
+  width: 200px;
+  margin-top: 20px;
 
-    p{
-        color: #275838;
-        font-weight: 400;
-        font-size: 45px;
-        padding: 10px;
-    }
+}
 
-    h6{
-        color: ;
-        padding: 10px;
-        font-weight: 100;
-        font-size: 16px;
-        letter-spacing: 0.15px;
+.climate-change-list {
+  list-style-type: disc;
+  padding-left: px;
+  font-size: 1.1rem;
+}
+
+/* Clean Energy Solutions Section */
+.clean-energy-solutions {
+  padding: 50px 0;
+}
+
+.solution-cards {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.solution-card {
+  background-color: #F3FFEF;
+  padding: 10px;
+  text-align: center;
+  flex: 1 1 calc(30% - 20px);
+
+      h3{
+        display: flex;
+        gap:20px;
+        align-items: center;
     }
+}
+
+.solution-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Statistics Section */
+.statistics {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-content{
+    position: relative;
+  }
+  .hero-image img{
+    position: relative;
+    left: 0px;
+    top: 6px;
+    width: 480px;
+    height: 300px;
+  }
+
+  .climate-change {
+    text-align: center;
+  }
+  .climate-change-content,
+  .climate-change-list {
+    width: 100%
+  }
+  .solution-cards {
+    flex-direction: column;
+  }
+
+  .solution-card {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .statistics .stat {
+    flex-basis: 50%;
+    padding: 10px;
+  }
 }
