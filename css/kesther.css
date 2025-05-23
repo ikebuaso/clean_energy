@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color:#fff;
+}
+
+/* Header */
+.header {
+  background-color: #1b4d3e;
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav{
+    background-color: #275838;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #837E7E;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+
+
+}
+nav ul li a{
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.loginsec{
+    display: flex;
+    gap: 10px;
+}
+.loginsec .login{ 
+    background-color: #f0f0f0;
+    color: #275838;
+    padding: 5px;
+    border: 2px;
+}
+
+.loginsec .signup{ 
+    background-color:#46CC755C;
+    color: #f0f0f0;
+    padding: 5px;
+    border: 2px;
+}
+
+main{
+  padding:30px;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+}
+
+main > section > div{
+  padding:20px 200px;
+}
+
+main > section > div:nth-child(1) > h1{
+  color:#275838;
+  font-size: 40px;
+}
+
+
+main > section > div:nth-child(1) > small{
+  font-weight: bold;
+}
+
+
+main > section > div:nth-child(1) > button{
+  padding:5px;
+  width:150px;
+  border-radius: 20px;
+  background: none;
+  border:2px solid #275838;
+  transition: .5s ease-in-out;
+}
+
+main > section > div:nth-child(1) > button:hover{
+  color:whitesmoke;
+  background:#275838;
+
+}
+
+main > section > img{
+  width:auto;
+  height: auto;
+}
+
+main > section > div > h3{
+  padding:10px 0;
+}
+
+main > section > div > p{
+  padding: 20px 0; 
+}
+
+main > section > div > ul{
+  padding:0 30px;
+}
+
+
+@media screen and (max-width:600px){
+
+main{
+  padding:5px;
+}
+
+main > section > div{
+  padding:20px 20px;
+}
+
+
+main > section > div:nth-child(1) > h1{
+  color:#275838;
+  font-size: 30px;
+}
+
+
+main > section > img{
+  width:100%;
+  height: 100%;
+}
+
+
+}
